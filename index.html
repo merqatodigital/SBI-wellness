@@ -851,11 +851,6 @@
                 <img src="images/philhealth-accredited.png" alt="PhilHealth Accredited - Your Partner in Health" class="accred-img-philhealth" loading="eager" onerror="if(!this.dataset.fb){this.dataset.fb=1;this.src='images/philhealth-accredited.svg';}" />
               </a>
 
-              <!-- Maxicare Accredited Transparent Logo -->
-              <a href="#why-sbi" class="accred-badge-card" title="Maxicare Accredited Healthcare Provider">
-                <img src="images/maxicare-accredited.png" alt="Maxicare Accredited - Live your best life" class="accred-img-maxicare" loading="eager" onerror="if(!this.dataset.fb){this.dataset.fb=1;this.src='images/maxicare-accredited.svg';}" />
-              </a>
-
             </div>
           </div>
 
@@ -1816,11 +1811,6 @@
               <a href="#why-sbi" title="PhilHealth Accredited Health Care Facility" class="transition-transform duration-200 hover:scale-105">
                 <img src="images/philhealth-accredited.png" alt="PhilHealth Accredited - Your Partner in Health" class="accred-img-philhealth" loading="lazy" onerror="if(!this.dataset.fb){this.dataset.fb=1;this.src='images/philhealth-accredited.svg';}" />
               </a>
-
-              <!-- Maxicare Accredited Logo -->
-              <a href="#why-sbi" title="Maxicare Accredited Healthcare Facility" class="transition-transform duration-200 hover:scale-105">
-                <img src="images/maxicare-accredited.png" alt="Maxicare Accredited - Live your best life" class="accred-img-maxicare" loading="lazy" onerror="if(!this.dataset.fb){this.dataset.fb=1;this.src='images/maxicare-accredited.svg';}" />
-              </a>
             </div>
           </div>
         </div>
@@ -1980,11 +1970,11 @@
           <div class="bg-white p-4 rounded-2xl border border-slate-200 space-y-4">
             <div>
               <h3 class="font-display text-sm font-bold text-navy mb-1">Official Accreditation Badges</h3>
-              <p class="text-xs text-slate-600">The DOH Certified, PhilHealth Accredited, and Maxicare Accredited logos display in the Hero top bar and Footer.</p>
+              <p class="text-xs text-slate-600">The DOH Certified and PhilHealth Accredited logos display in the Hero top bar and Footer.</p>
             </div>
 
             <!-- Current Badges Grid -->
-            <div class="grid grid-cols-3 gap-2.5 pt-1">
+            <div class="grid grid-cols-2 gap-2.5 pt-1">
               <div class="p-2.5 rounded-xl border border-slate-200 bg-slate-50 flex flex-col items-center justify-center text-center">
                 <div class="h-10 flex items-center justify-center mb-1">
                   <img src="images/doh-certified.png" alt="DOH Preview" class="h-8 w-auto object-contain accred-img-doh" onerror="if(!this.dataset.fb){this.dataset.fb=1;this.src='images/doh-certified.svg';}" />
@@ -2007,16 +1997,7 @@
                 </label>
               </div>
 
-              <div class="p-2.5 rounded-xl border border-slate-200 bg-slate-50 flex flex-col items-center justify-center text-center">
-                <div class="h-10 flex items-center justify-center mb-1">
-                  <img src="images/maxicare-accredited.png" alt="Maxicare Preview" class="h-8 w-auto object-contain accred-img-maxicare" onerror="if(!this.dataset.fb){this.dataset.fb=1;this.src='images/maxicare-accredited.svg';}" />
-                </div>
-                <span class="text-[10px] font-bold text-blue-800 leading-tight">Maxicare</span>
-                <label class="mt-2 text-[10px] text-pink font-bold hover:underline cursor-pointer">
-                  Change
-                  <input type="file" id="admin-maxicare-upload" accept="image/*" class="hidden" />
-                </label>
-              </div>
+
             </div>
 
             <div class="pt-1">
@@ -2517,9 +2498,6 @@
           if (typeof siteData.accreditations.philhealth === 'string' && siteData.accreditations.philhealth.trim()) {
             document.querySelectorAll('.accred-img-philhealth').forEach(img => img.src = siteData.accreditations.philhealth);
           }
-          if (typeof siteData.accreditations.maxicare === 'string' && siteData.accreditations.maxicare.trim()) {
-            document.querySelectorAll('.accred-img-maxicare').forEach(img => img.src = siteData.accreditations.maxicare);
-          }
         }
 
         // Apply Colors
@@ -2857,7 +2835,6 @@
 
       handleAccredUpload('admin-doh-upload', 'doh', 'images/doh-certified.png');
       handleAccredUpload('admin-philhealth-upload', 'philhealth', 'images/philhealth-accredited.png');
-      handleAccredUpload('admin-maxicare-upload', 'maxicare', 'images/maxicare-accredited.png');
 
       const resetAccredBtn = document.getElementById('admin-reset-accred-btn');
       if (resetAccredBtn) {
@@ -2867,7 +2844,6 @@
           }
           document.querySelectorAll('.accred-img-doh').forEach(img => img.src = 'images/doh-certified.png');
           document.querySelectorAll('.accred-img-philhealth').forEach(img => img.src = 'images/philhealth-accredited.png');
-          document.querySelectorAll('.accred-img-maxicare').forEach(img => img.src = 'images/maxicare-accredited.png');
           saveSiteState();
         });
       }
