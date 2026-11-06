@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 300" width="100%" height="100%">
+  <!-- Maxicare Wordmark -->
+  <g transform="translate(45, 30)">
+    <!-- Main Maxicare Text -->
+    <text x="0" y="90" font-family="'Plus Jakarta Sans', 'Segoe UI', Arial, sans-serif" font-weight="900" font-size="94" fill="#003BA3" letter-spacing="-1.5">Maxicare</text>
+    
+    <!-- Tagline: Live your best life -->
+    <text x="4" y="148" font-family="'Plus Jakarta Sans', 'Segoe UI', Arial, sans-serif" font-weight="600" font-size="40" fill="#003BA3" letter-spacing="-0.2">Live your best life</text>
+
+    <!-- ACCREDITED Bottom Label -->
+    <text x="225" y="224" text-anchor="middle" font-family="'Plus Jakarta Sans', 'Segoe UI', Arial, sans-serif" font-weight="900" font-size="44" fill="#0F2B6E" letter-spacing="4">ACCREDITED</text>
+  </g>
+</svg>
